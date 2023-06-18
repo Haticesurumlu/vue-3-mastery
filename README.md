@@ -41,3 +41,19 @@ By importing this app, and mounting it to the DOM, we’ve essentially plugged t
 
 
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/e3627d95-9df1-43bc-a76e-7b5f05149417)
+
+If you’re wondering what’s happening with this double curly brace syntax, you can imagine it like a phone, which has access to a phone within our Vue app. From our template, we’re able to ask the app, “Hey, what’s the value of product?” And the app responds, “Socks.” When the page renders, we see “Socks” display on the page.
+
+
+Vue’s Reactivity
+What would happen if we changed the value of product from “Socks” to “Boots”?
+
+📄main.js
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/7fc28faa-77be-457e-aae6-0b31a838c4ea)
+
+Because of how Vue works, the h1’s expression that is relying upon product would automatically receive that new value, and our DOM would update to display “Boots”.
+
+📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/9e15b14a-91e9-430e-9fe1-e4ff2b4bc9ca)
+
+
