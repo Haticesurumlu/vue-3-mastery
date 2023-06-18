@@ -1,12 +1,12 @@
 # vue-3-mastery
 
 
-###Touring the Starting Code
+### Touring the Starting Code
 
 To take a tour of the starting code, you’ll see we have an assets directory. Inside of there, there’s a directory for images. We’ve got one for blue socks, and green socks. We also have a CSS file for all of our styles.
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/4d1f414b-6bf9-4a74-88d3-5fea55dc3cad)
 
-###Creating a Vue App
+### Creating a Vue App
 
 To display our data within our HTML, we’ll first have to create a Vue app. In our main.js file, we’ll create our app with:
 
@@ -22,20 +22,20 @@ As an argument, we’re going to pass in an object and add a data property. This
 📄index.html
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/f55c5eb5-1604-4bfd-b982-9eeeb3161b70)
 
-Mounting Our App
+### Mounting Our App
 We’ve created our app, we need to mount the app that we just created, into our DOM. We’ll do that inside of a script tag, in our index.html file.
 
 📄index.html
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/56caf9c5-de68-44a9-984c-114671542539)
 
-###Displaying the Data
+### Displaying the Data
 
 Now that we’ve created, imported and mounted out Vue app, we can now start displaying the data that lives within it.
 
 To render the product data within the h1, we’ll write:
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/7683a6f5-8036-4bff-9a92-6347b0f44b7c)
 
-###Understanding the Vue Instance
+### Understanding the Vue Instance
 
 When we created our Vue app, we passed in the options object, which allowed us to add some optional properties to configure the application. Doing this creates our Vue instance, the heart of our Vue application, which powers everything.
 
@@ -49,7 +49,7 @@ By importing this app, and mounting it to the DOM, we’ve essentially plugged t
 If you’re wondering what’s happening with this double curly brace syntax, you can imagine it like a phone, which has access to a phone within our Vue app. From our template, we’re able to ask the app, “Hey, what’s the value of product?” And the app responds, “Socks.” When the page renders, we see “Socks” display on the page.
 
 
-###Vue’s Reactivity
+### Vue’s Reactivity
 
 What would happen if we changed the value of product from “Socks” to “Boots”?
 
