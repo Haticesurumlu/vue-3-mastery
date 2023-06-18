@@ -19,3 +19,25 @@ As an argument, we’re going to pass in an object and add a data property. This
 
 📄index.html
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/f55c5eb5-1604-4bfd-b982-9eeeb3161b70)
+
+Mounting Our App
+We’ve created our app, we need to mount the app that we just created, into our DOM. We’ll do that inside of a script tag, in our index.html file.
+
+📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/56caf9c5-de68-44a9-984c-114671542539)
+
+Displaying the Data
+Now that we’ve created, imported and mounted out Vue app, we can now start displaying the data that lives within it.
+
+To render the product data within the h1, we’ll write:
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/7683a6f5-8036-4bff-9a92-6347b0f44b7c)
+
+Understanding the Vue Instance
+When we created our Vue app, we passed in the options object, which allowed us to add some optional properties to configure the application. Doing this creates our Vue instance, the heart of our Vue application, which powers everything.
+
+📄main.js
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/35ef068c-53f4-4f7c-94dd-b032f5af88cc)
+By importing this app, and mounting it to the DOM, we’ve essentially plugged the app into our DOM, giving our HTML a direct line into the app. This way, our template code can access options from the app, such as its data.
+
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/e3627d95-9df1-43bc-a76e-7b5f05149417)
