@@ -71,3 +71,28 @@ Because of how Vue works, the h1’s expression that is relying upon product wou
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/9e15b14a-91e9-430e-9fe1-e4ff2b4bc9ca)
 
 
+# Attribute Binding
+
+📄index.html
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/a8fe061d-da64-4d55-a8dd-eaf56f977847)
+
+📄main.js
+
+
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/5f909930-c2ca-48f3-afa2-b988626f2410)
+
+Now we’re ready to add an img element in the template.
+
+📄index.html
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/60731423-77d4-4350-b195-790c56a22685)
+
+
+### Introducing Attribute Binding
+To create a bond between an HTML element’s attribute and a value from your Vue app’s data, we’ll use a Vue directive called v-bind.
+
+📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/ba97618a-917e-4e13-915c-be9424e034c0)
+
