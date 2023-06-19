@@ -15,10 +15,16 @@
       <div class="product-display">
         <div class="product-container">
           <div class="product-image">
-            <!-- image goes here -->
+            <img v-bind:src="image" />
           </div>
           <div class="product-info">
             <h1>{{ product }}</h1>
+            <!-- -The v-if directive
+            <p v-if="inStock">In Stock</p>
+            <p v-else>Out of Stock</p> -->
+
+            <!-- -v-show-->
+            <p v-show="inStock">In Stock</p>
           </div>
         </div>
       </div>
