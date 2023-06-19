@@ -113,6 +113,8 @@ Now, this element will render only if inStock is truthy.
 We can combine the v-if directive with its sister directive v-else to display another element as the fallback if the first condition turns out to be falsey.
 
 📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/acee7dc1-28bd-4034-a804-16dd2437f809)
+
  
 Now, if inStock is false, we’ll see “Out of Stock” gets rendered to the page.
 
@@ -120,7 +122,8 @@ Now, if inStock is false, we’ll see “Out of Stock” gets rendered to the pa
 
 Show and Hide
 It’s worth noting that you don’t always need to pair v-if with v-else. There are plenty of use cases where you don’t need a fallback element to render. However, in these cases, it is sometimes a better option to use the v-show directive.
- 
+ ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/74990144-6a2a-4b2e-9610-017a142d0afa)
+
 The v-show directive is used for toggling an element’s visibility instead of adding and removing the element from the DOM entirely, like v-if does.
 As you might imagine, this is a more performant option if you have something that’s toggling off and on the screen often. We can verify this by setting inStock to false and viewing the element in the browser’s Developer Tools. When v-show is used, we can see that the element is still present in the DOM, but it’s now hidden with an inline style of display: none; added to it.
 
@@ -128,6 +131,7 @@ As you might imagine, this is a more performant option if you have something tha
 
 
 
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/ca8bbf0d-6174-4c6e-9f51-78ae326e10bf)
 
 
 
