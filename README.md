@@ -98,9 +98,11 @@ To create a bond between an HTML element’s attribute and a value from your Vue
 
 Conditional Rendering
 📄index.html
- 
+ ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/b18d3fc1-ee56-4b61-9d8a-af44e39b0c4f)
+
 📄main.js
- 
+ ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/c7ae642e-ff67-43bd-94e7-68e8b92a715a)
+
 
 The v-if directive
 We can add the v-if directive onto an element to render it based upon a condition, like so.
