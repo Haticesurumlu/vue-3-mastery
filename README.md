@@ -96,3 +96,48 @@ To create a bond between an HTML element’s attribute and a value from your Vue
 📄index.html
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/ba97618a-917e-4e13-915c-be9424e034c0)
 
+Conditional Rendering
+📄index.html
+ 
+📄main.js
+ 
+
+The v-if directive
+We can add the v-if directive onto an element to render it based upon a condition, like so.
+ 
+Now, this element will render only if inStock is truthy.
+We can combine the v-if directive with its sister directive v-else to display another element as the fallback if the first condition turns out to be falsey.
+
+📄index.html
+ 
+Now, if inStock is false, we’ll see “Out of Stock” gets rendered to the page.
+
+
+
+Show and Hide
+It’s worth noting that you don’t always need to pair v-if with v-else. There are plenty of use cases where you don’t need a fallback element to render. However, in these cases, it is sometimes a better option to use the v-show directive.
+ 
+The v-show directive is used for toggling an element’s visibility instead of adding and removing the element from the DOM entirely, like v-if does.
+As you might imagine, this is a more performant option if you have something that’s toggling off and on the screen often. We can verify this by setting inStock to false and viewing the element in the browser’s Developer Tools. When v-show is used, we can see that the element is still present in the DOM, but it’s now hidden with an inline style of display: none; added to it.
+
+ 
+
+
+
+
+
+
+
+
+
+Chained Conditional Logic
+
+📄main.js
+ 
+
+📄index.html
+ 
+
+📄index.html
+ 
+
