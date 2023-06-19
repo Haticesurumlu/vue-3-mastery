@@ -105,6 +105,8 @@ Conditional Rendering
 
 
 The v-if directive
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/f4d7ebe4-6ba0-4055-a5a0-c77b7f145f7e)
+
 We can add the v-if directive onto an element to render it based upon a condition, like so.
  
 Now, this element will render only if inStock is truthy.
