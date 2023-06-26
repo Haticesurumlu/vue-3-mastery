@@ -149,4 +149,19 @@ Chained Conditional Logic
 📄index.html
  
 
-###List Rendering
+### List Rendering
+Our Goal
+Render HTML lists from an array in our data.
+
+Looping through data arrays
+In the starting code, we now have an array of details.
+📄main.js
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/3af98814-daa7-4c3d-9aa9-2d7bee97ec96)
+The question now is: how do we display this data as a list?
+
+We’ll start by creating an unordered list in our index.html. On the li inside of it, we’ll add another Vue directive: v-for
+
+📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/c56b69bb-927b-4a53-9bce-92d912b54ad3)
+Inside the v-for expression, we wrote: detail in details. Here, details refers to the details array in our data, and detail is the alias for the current element from that array, as we’re looping through it to print out a new li.
