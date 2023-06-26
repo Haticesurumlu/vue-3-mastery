@@ -150,16 +150,17 @@ Chained Conditional Logic
  
 
 ### List Rendering
-Our Goal
+#### Our Goal
 Render HTML lists from an array in our data.
 
 Looping through data arrays
 In the starting code, we now have an array of details.
+
+
 📄main.js
 
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/3af98814-daa7-4c3d-9aa9-2d7bee97ec96)
 The question now is: how do we display this data as a list?
-
 We’ll start by creating an unordered list in our index.html. On the li inside of it, we’ll add another Vue directive: v-for
 
 📄index.html
