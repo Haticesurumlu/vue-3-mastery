@@ -188,7 +188,7 @@ We now have an array that contains an object for each variant of our product. Ea
 This provides some performance improvements, and later down the line, if you’re doing something like animating your elements, you’ll find that the key attribute really helps Vue effectively manage your elements as they move around the DOM.
 
 
-### Event Handling
+# Event Handling
 📄index.html
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/c0988f97-e15f-4fa8-8f86-e74bd6c354b6)
 📄main.js
@@ -212,3 +212,16 @@ Because the logic cart += 1 is very simple, we could keep it in-line on the butt
 📄index.html
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/0dbc2fd1-c6af-403d-8320-8921dcdecb20)
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/23aecb7c-ecec-4e64-bc4c-449a771c26c0)
+
+Understanding v-on
+Let’s take a deeper look into how this event handling is working.
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/ad333986-5416-4359-9438-a3bd2fc11755)
+
+By adding v-on to an element, we’re essentially giving it an ear that can listen for events. In this case, we’ve specified that we’re listening for click events. When a click happens, the addToCart method runs, which as we just saw, takes the value of cart and increments it by one.
+
+### A shorthand for v-on
+As you can imagine, listening for events on your elements is super common. Just like how v-bind had a shorthand (:), v-on has a shorthand: @
+
+So our code could be simplified to:
+
+📄index.html
