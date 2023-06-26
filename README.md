@@ -213,7 +213,7 @@ Because the logic cart += 1 is very simple, we could keep it in-line on the butt
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/0dbc2fd1-c6af-403d-8320-8921dcdecb20)
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/23aecb7c-ecec-4e64-bc4c-449a771c26c0)
 
-Understanding v-on
+### Understanding v-on
 Let’s take a deeper look into how this event handling is working.
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/ad333986-5416-4359-9438-a3bd2fc11755)
 
