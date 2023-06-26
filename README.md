@@ -96,3 +96,93 @@ To create a bond between an HTML element’s attribute and a value from your Vue
 📄index.html
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/ba97618a-917e-4e13-915c-be9424e034c0)
 
+Conditional Rendering
+📄index.html
+ ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/b18d3fc1-ee56-4b61-9d8a-af44e39b0c4f)
+
+📄main.js
+ ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/c7ae642e-ff67-43bd-94e7-68e8b92a715a)
+
+
+The v-if directive
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/f4d7ebe4-6ba0-4055-a5a0-c77b7f145f7e)
+
+We can add the v-if directive onto an element to render it based upon a condition, like so.
+ 
+Now, this element will render only if inStock is truthy.
+We can combine the v-if directive with its sister directive v-else to display another element as the fallback if the first condition turns out to be falsey.
+
+📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/acee7dc1-28bd-4034-a804-16dd2437f809)
+
+ 
+Now, if inStock is false, we’ll see “Out of Stock” gets rendered to the page.
+
+
+
+Show and Hide
+It’s worth noting that you don’t always need to pair v-if with v-else. There are plenty of use cases where you don’t need a fallback element to render. However, in these cases, it is sometimes a better option to use the v-show directive.
+ ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/74990144-6a2a-4b2e-9610-017a142d0afa)
+
+The v-show directive is used for toggling an element’s visibility instead of adding and removing the element from the DOM entirely, like v-if does.
+As you might imagine, this is a more performant option if you have something that’s toggling off and on the screen often. We can verify this by setting inStock to false and viewing the element in the browser’s Developer Tools. When v-show is used, we can see that the element is still present in the DOM, but it’s now hidden with an inline style of display: none; added to it.
+
+ 
+
+
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/ca8bbf0d-6174-4c6e-9f51-78ae326e10bf)
+
+
+
+
+
+
+Chained Conditional Logic
+
+📄main.js
+ 
+
+📄index.html
+ 
+
+📄index.html
+ 
+
+### List Rendering
+#### Our Goal
+Render HTML lists from an array in our data.
+
+Looping through data arrays
+In the starting code, we now have an array of details.
+
+
+📄main.js
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/3af98814-daa7-4c3d-9aa9-2d7bee97ec96)
+The question now is: how do we display this data as a list?
+We’ll start by creating an unordered list in our index.html. On the li inside of it, we’ll add another Vue directive: v-for
+
+📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/c56b69bb-927b-4a53-9bce-92d912b54ad3)
+Inside the v-for expression, we wrote: detail in details. Here, details refers to the details array in our data, and detail is the alias for the current element from that array, as we’re looping through it to print out a new li.
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/d2746801-1d66-42a1-90b2-60a785c634f2)
+So far so good, but how is v-for actually working?
+
+### Product Variant Colors
+📄main.js
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/68f3bf8e-d849-4dc0-a5a8-a9fb13d60570)
+
+We now have an array that contains an object for each variant of our product. Each product variant has an id, and a color. So for our next task, we’ll print out each variant color, and use the id to help Vue keep track of our list items.
+
+
+📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/ca7eb5dc-a9dc-4fc9-8eb9-17adbf910908)
+
+
+### Key Attribute: An essential for list items
+
+📌 By saying :key="variant.id", we’re using the shorthand for v-bind to bind the variant’s id to the key attribute. This gives each DOM element a unique key so that Vue can grasp onto the element and not lose track of it as things update within the app.
+This provides some performance improvements, and later down the line, if you’re doing something like animating your elements, you’ll find that the key attribute really helps Vue effectively manage your elements as they move around the DOM.
