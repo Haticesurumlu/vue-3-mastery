@@ -225,3 +225,13 @@ As you can imagine, listening for events on your elements is super common. Just 
 So our code could be simplified to:
 
 📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/ff761983-2b6a-4a10-9ed5-e570ccad3ada)
+### Another Example: Mouseover Events
+
+Wouldn’t it be nice if, when we hovered our mouse over “green” and “blue”, we triggered an update of the image to the green and blue image, respectively? Let’s add the ability to listen for mouseover events (Vue’s term for “hover”) on these color names.
+
+Because we want to update the image that we’re displaying when we mouse over the variant colors, I’ve added a new property to each variant object.
+📄main.js
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/4a969453-68d9-4a28-bbac-0ea03edc6152)
+
+
