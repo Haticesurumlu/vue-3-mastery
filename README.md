@@ -182,4 +182,7 @@ We now have an array that contains an object for each variant of our product. Ea
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/ca7eb5dc-a9dc-4fc9-8eb9-17adbf910908)
 
 
+### Key Attribute: An essential for list items
 
+📌 By saying :key="variant.id", we’re using the shorthand for v-bind to bind the variant’s id to the key attribute. This gives each DOM element a unique key so that Vue can grasp onto the element and not lose track of it as things update within the app.
+This provides some performance improvements, and later down the line, if you’re doing something like animating your elements, you’ll find that the key attribute really helps Vue effectively manage your elements as they move around the DOM.
