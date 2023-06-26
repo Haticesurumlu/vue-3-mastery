@@ -166,3 +166,20 @@ We’ll start by creating an unordered list in our index.html. On the li inside 
 📄index.html
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/c56b69bb-927b-4a53-9bce-92d912b54ad3)
 Inside the v-for expression, we wrote: detail in details. Here, details refers to the details array in our data, and detail is the alias for the current element from that array, as we’re looping through it to print out a new li.
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/d2746801-1d66-42a1-90b2-60a785c634f2)
+So far so good, but how is v-for actually working?
+
+### Product Variant Colors
+📄main.js
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/68f3bf8e-d849-4dc0-a5a8-a9fb13d60570)
+
+We now have an array that contains an object for each variant of our product. Each product variant has an id, and a color. So for our next task, we’ll print out each variant color, and use the id to help Vue keep track of our list items.
+
+
+📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/ca7eb5dc-a9dc-4fc9-8eb9-17adbf910908)
+
+
+
