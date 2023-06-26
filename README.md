@@ -186,3 +186,29 @@ We now have an array that contains an object for each variant of our product. Ea
 
 📌 By saying :key="variant.id", we’re using the shorthand for v-bind to bind the variant’s id to the key attribute. This gives each DOM element a unique key so that Vue can grasp onto the element and not lose track of it as things update within the app.
 This provides some performance improvements, and later down the line, if you’re doing something like animating your elements, you’ll find that the key attribute really helps Vue effectively manage your elements as they move around the DOM.
+
+
+### Event Handling
+📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/c0988f97-e15f-4fa8-8f86-e74bd6c354b6)
+📄main.js
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/bde1b0d0-9670-4f0f-8688-6dc63bcd518d)
+#### Our Goal
+We want to be able to click the button and increment the value of cart.
+Listening for Events
+In order to know when the button is clicked, we need to be listening for events on that element, specifically click events. We can achieve this by using another Vue directive: v-on.
+
+📄index.html
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/d20ba599-657d-4bf1-b03c-c123e1821240)
+
+Here, we are telling v-on what type of event to listen for: a click. Inside the quotes, we place the logic (or method name) we want to run when that event happens.
+
+If we write v-on:click="cart += 1", we’ll increment the value of cart by 1, when a click event happens.
+
+#### Triggering a method
+Because the logic cart += 1 is very simple, we could keep it in-line on the button element, like we have it. But often, we need to trigger more complex logic. In those situations, we can add a method name to fire when the event happens. So let’s do that now.
+
+📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/0dbc2fd1-c6af-403d-8320-8921dcdecb20)
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/23aecb7c-ecec-4e64-bc4c-449a771c26c0)
