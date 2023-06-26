@@ -231,7 +231,16 @@ So our code could be simplified to:
 Wouldn’t it be nice if, when we hovered our mouse over “green” and “blue”, we triggered an update of the image to the green and blue image, respectively? Let’s add the ability to listen for mouseover events (Vue’s term for “hover”) on these color names.
 
 Because we want to update the image that we’re displaying when we mouse over the variant colors, I’ve added a new property to each variant object.
-📄main.js
-![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/4a969453-68d9-4a28-bbac-0ea03edc6152)
 
+📄main.js
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/4a969453-68d9-4a28-bbac-0ea03edc6152)
+Now each variant has an image path for the green and blue socks, respectively. We’re ready to add a listener for mouseover events on the variant color div.
+
+📄main.js
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/f9503cb4-e314-4526-983f-3a3e64f62228)
+
+When a mouseover event happens, we’re triggering the updateImage method, passing in the image path of each variant. That method looks like this:
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/bc69ba8a-5c5d-4c0f-a493-273e1b9aadd8)
 
