@@ -246,16 +246,56 @@ When a mouseover event happens, we’re triggering the updateImage method, passi
 
 # Class & Style Binding
 ### Style Binding
+
 📌 Let’s create green and blue circles that we can hover on. We can achieve this by using style binding.
 First, to style our divs like circles, we’ll we need to add a new class .color-circle to the variant div.
 
 📄index.html
+
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/4acac33e-d013-4fe6-a849-f79771fe9cae)
 
 📄styles.css
+
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/28c967a3-605d-4b03-b430-6e68977732c4)
 Now that we’ve got that out of the way, we can move on to the actual style binding. Just like it sounds, we want to bind styles to the variant divs. We do so by using v-bind (or its shorthand: :) on the style attribute, and binding a style object to it.
 
 📄index.html
+
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/1ccfa33b-0865-4c91-b700-af86921851a5)
+
+Here, we’re setting the divs’ backgroundColor equal to the variant.color. So instead of printing out those strings, “green” and “blue”, we’re using them to set the background color of our circles.
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/bb44e413-1c4f-420c-be14-23c25239e55a)
+
+😍 Cool! Now let’s understand, on a deeper level, how this is all working.
+
+### Understanding Style Binding
+
+📄index.html
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/cef1cea5-2a3d-49e5-bd9e-7ad04beecec7)
+
+That style object has the CSS property of backgroundColor, and we’re setting that equal to whatever the variant color is at the time of that v-for iteration.
+
+In the first iteration, variant.color is "green"
+
+Vue takes that information and converts it into the code:style="{ backgroundColor: green }"
+
+Then prints out a green background circle.
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/d542a43a-2bf0-40e4-8a49-05e00c2f8a7c)
+
+### Camel vs Kebab
+📌 There are some important things to consider when using style binding like this.
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/8ca33622-7192-489c-a1d7-e972c2490efc)
+
+Inside of this expression, remember that this style object is all JavaScript. That’s why I used camelCase in the property name. If I had said background-color, that - would’ve been interpreted as a minus sign. But we’re not doing any math here. We’re setting a CSS property name.
+
+So since we’re in this JavaScript object, we have to use camelCased unless we want to use ‘kebab-cased’ in quotes to avoid the mathematical misinterpretation, like so:
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/5913dc72-f0b7-4717-93c9-3a16bde466c6)
+
+✔ Both options will work, as long as you remember your quotation marks.
+
+
+
 
