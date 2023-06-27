@@ -296,6 +296,11 @@ So since we’re in this JavaScript object, we have to use camelCased unless we 
 
 ✔ Both options will work, as long as you remember your quotation marks.
 
+### Style Binding: Objects
+Sometimes you might want to add a bunch of styles to an element, but adding them all in-line could get messy. In these situations, we can bind to an entire style object that lives within our data.
 
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/e5c13487-68fe-4a68-8ecd-384a77171920)
+
+### Class Binding
 
 
