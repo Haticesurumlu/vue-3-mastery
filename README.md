@@ -244,3 +244,18 @@ When a mouseover event happens, we’re triggering the updateImage method, passi
 
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/bc69ba8a-5c5d-4c0f-a493-273e1b9aadd8)
 
+# Class & Style Binding
+### Style Binding
+📌 Let’s create green and blue circles that we can hover on. We can achieve this by using style binding.
+First, to style our divs like circles, we’ll we need to add a new class .color-circle to the variant div.
+
+📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/4acac33e-d013-4fe6-a849-f79771fe9cae)
+
+📄styles.css
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/28c967a3-605d-4b03-b430-6e68977732c4)
+Now that we’ve got that out of the way, we can move on to the actual style binding. Just like it sounds, we want to bind styles to the variant divs. We do so by using v-bind (or its shorthand: :) on the style attribute, and binding a style object to it.
+
+📄index.html
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/1ccfa33b-0865-4c91-b700-af86921851a5)
+
