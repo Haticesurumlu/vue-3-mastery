@@ -25,13 +25,12 @@ body {
   margin: 25px 100px;
   float: right;
   border: 1px solid #d8d8d8;
-  padding: 10px 30px;
+  padding: 30px 30px;
   background-color: white;
   -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
   box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
 }
-
 .color-circle {
   width: 50px;
   height: 50px;
@@ -39,7 +38,6 @@ body {
   border: 2px solid #d8d8d8;
   border-radius: 50%;
 }
-
 .disabledButton {
   background-color: #d8d8d8;
   cursor: not-allowed;
@@ -85,6 +83,10 @@ li {
   -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
   -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.57);
+}
+
+.out-of-stock-img {
+  opacity: 0.5;
 }
 
 p {
