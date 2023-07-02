@@ -302,5 +302,17 @@ Sometimes you might want to add a bunch of styles to an element, but adding them
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/e5c13487-68fe-4a68-8ecd-384a77171920)
 
 ### Class Binding
+Let's disable the Add to Cart button when inStock is false AND make the button appear disabled, using class binding.
+To get this started, we’ll use the shorthand for v-bind on the disabled attribute to add that attribute whenever our product is not in stock.
 
+📄index.html
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/1aa4315b-ba15-4ab6-a31e-68ff5cd35958)
+
+Now, whenever inStock is false and we click the Add to Cart button, nothing will happen since it’s disabled. But the button still appears active, which is misleading to our users. So let’s use class binding to add a disabledButton class as well, whenever inStock is false.
+
+You’ll see in our CSS file that we already have this disabledButton class, which sets the background-color to gray and makes the cursor not-allowed.
+📄styles.css
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/cdbf7df6-e28b-4265-9f76-fd6dd231ba67)
 
