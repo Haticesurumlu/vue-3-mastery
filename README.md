@@ -312,7 +312,16 @@ To get this started, we’ll use the shorthand for v-bind on the disabled attrib
 Now, whenever inStock is false and we click the Add to Cart button, nothing will happen since it’s disabled. But the button still appears active, which is misleading to our users. So let’s use class binding to add a disabledButton class as well, whenever inStock is false.
 
 You’ll see in our CSS file that we already have this disabledButton class, which sets the background-color to gray and makes the cursor not-allowed.
+
+
 📄styles.css
 
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/cdbf7df6-e28b-4265-9f76-fd6dd231ba67)
 
+To apply this class conditionally, based on the value of inStock, we’ll use the shorthand for v-bind on the class attribute, and use an expression that adds the disabledButton class (or not) whenever !inStock.
+
+📄index.html
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/7e4b5ccb-b41b-4ce7-8136-bb43c2b47044)
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/93ddb07e-db53-453b-a9a1-33cf633095b3)
