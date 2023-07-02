@@ -341,3 +341,6 @@ Those classes are going to be combined like so:
 
 ### Ternary Operators
 
+A helpful tool that class binding gives us is the ability to use in-line ternary operators to add different classes based upon a condition.
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/433d9288-93a6-46b4-bd1a-98cad96cefc7)
