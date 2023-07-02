@@ -325,3 +325,19 @@ To apply this class conditionally, based on the value of inStock, we’ll use th
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/7e4b5ccb-b41b-4ce7-8136-bb43c2b47044)
 
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/93ddb07e-db53-453b-a9a1-33cf633095b3)
+
+### Multiple Class Names
+When getting started with class binding, there are some things to note. For example, what happens when we already have an existing class and we want to conditionally add another class based on a data value?
+
+For example, if we already have the color-circle class on this div, and we conditionally add the active class, how will this look?
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/27f71ef3-d2ea-421e-9733-7ad9b1775b12)
+
+
+Those classes are going to be combined like so:
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/c1233bd3-a83f-4326-97c6-ebd988d7f26f)
+
+
+### Ternary Operators
+
