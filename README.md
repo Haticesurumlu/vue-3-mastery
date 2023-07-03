@@ -396,4 +396,35 @@ Notice how the green socks have a quantity of 50 while the blue socks have 0. In
 
 To get started, remember how we updated the variant image, based on which variant color is moused over? Instead of that mouseover event triggering the updateImage() method, we’re going to have it trigger a new method called updateVariant().
 
+📄index.html
 
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/10b8e513-9916-4e04-b8ed-fb085ab843b6)
+
+Notice how we’re passing in the index of the currently hovered-on variant: updateVariant(index). We got access to that index by adding it as a second parameter in our v-for directive:
+
+v-for="(variant, index) in variants"
+
+Why are we passing in the index? We’re going to use it to tell our app which variant is currently hovered on, so it can use that information to trigger the updating of both the image AND whether that variant is in stock or not.
+
+We’ll add a new data property to our app, which will be updated to equal that index
+📄main.js
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/a1ba35a8-1116-4db4-a0d1-57d7947ba2f3)
+
+Our updateVariant() method will set the selectedVariant’s value equal to the index of the currently hovered-on variant.
+
+📄main.js
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/0dde68b3-5028-40fb-a7cb-78a20103b9c0)
+
+Now, we’ve implemented a way for our app to know which product variant is being engaged with, and we’re able to use that information to trigger the computing of which image to show and whether to show “In stock” or “Out of stock”, based on which variant the user is moused over.
+
+We’re now ready to delete image and inStock from our data, and replace those with computed properties of the same names.
+
+📄main.js
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/27462afa-7e98-474a-9918-2e1717b62e45)
+
+
+So how do we grab the variant image and quantity? That will look like this:
+
+📄main.js
