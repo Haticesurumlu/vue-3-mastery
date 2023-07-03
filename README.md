@@ -360,3 +360,12 @@ What if we wanted to combine the brand and the product, in our template? We coul
 
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/a681d9a7-dd3d-4483-81bc-27be82e02481)
 
+
+If we checked this out in the browser, we’d see “Vue mastery Socks” displayed. But wouldn’t it be neat if, instead of handling this logic in the inner HTML, our app had the ability to compute that value for us? For example, taking the brand and the product, adding them together, and returning that new value.
+
+😍 Computed properties are exactly like they sound: properties we can add to a Vue app that compute values for us. They help us keep computational logic out of the template and give us performance improvements that we’ll cover soon. For now, let’s turn this simple example into a computed property. We’ll alter the h1’s expression like so:
+📄index.html
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/9b533eba-f947-43dc-9366-66f2a55929c4)
+
+Now, title is the name of a computed property that we’ll create now. First, we’ll add the computed option to the app, just below our methods, then create the title property.
