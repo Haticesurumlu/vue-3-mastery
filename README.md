@@ -344,3 +344,19 @@ Those classes are going to be combined like so:
 A helpful tool that class binding gives us is the ability to use in-line ternary operators to add different classes based upon a condition.
 
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/433d9288-93a6-46b4-bd1a-98cad96cefc7)
+
+
+# Computed Properties
+### Our Goal
+Update both the variant image AND whether it’s in stock or not, using computed properties.
+### A Simple Computed Property
+📄main.js
+
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/96ab0ab1-f20d-4594-9dbf-487b4c80da1d)
+What if we wanted to combine the brand and the product, in our template? We could do that within an expression like so:
+📄index.html
+
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/a681d9a7-dd3d-4483-81bc-27be82e02481)
+
