@@ -364,6 +364,7 @@ What if we wanted to combine the brand and the product, in our template? We coul
 If we checked this out in the browser, we’d see “Vue mastery Socks” displayed. But wouldn’t it be neat if, instead of handling this logic in the inner HTML, our app had the ability to compute that value for us? For example, taking the brand and the product, adding them together, and returning that new value.
 
 😍 Computed properties are exactly like they sound: properties we can add to a Vue app that compute values for us. They help us keep computational logic out of the template and give us performance improvements that we’ll cover soon. For now, let’s turn this simple example into a computed property. We’ll alter the h1’s expression like so:
+
 📄index.html
 
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/9b533eba-f947-43dc-9366-66f2a55929c4)
@@ -380,3 +381,19 @@ If we check out the browser, we’ll still see “Vue Mastery Socks” displayed
 But how exactly are computed properties working? Let’s take a deeper look.
 
 ### Think of them like a Calculator
+I like to think of computed properties kind of like a calculator, because they calculate or compute values for us. This computational calculator takes our values, brand and product, adds them together, and gives us the result.
+
+Like I mentioned earlier, computed properties provide us a performance improvement. This is because they cache the calculated value. The value ('Vue Mastery Socks') gets stored away and only updates when it needs to, when one of its dependencies change. For example, if the brand were to change from 'Vue Mastery' to 'Node Mastery', our computed property would receive that new brand dependency, then recalculate and return the new value: 'Node Mastery Socks'
+
+### Computing Image & Quantity
+Heading back into our code, let’s add a new quantity property to our variant objects.
+
+📄main.js
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/0bb617a3-5a9a-42bc-ac94-e5bb91cab739)
+
+
+Notice how the green socks have a quantity of 50 while the blue socks have 0. In other words, the green socks are in stock and the blue socks are out of stock. However, we’re currently displaying “In stock” or “Out of stock” based on the inStock data value, which no longer reflects the truth about our product and its variant quantities. So we’ll want to create a computed property we can use to display “In stock” or “Out of stock” based on these new quantities.
+
+To get started, remember how we updated the variant image, based on which variant color is moused over? Instead of that mouseover event triggering the updateImage() method, we’re going to have it trigger a new method called updateVariant().
+
+
