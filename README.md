@@ -369,3 +369,14 @@ If we checked this out in the browser, we’d see “Vue mastery Socks” displa
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/9b533eba-f947-43dc-9366-66f2a55929c4)
 
 Now, title is the name of a computed property that we’ll create now. First, we’ll add the computed option to the app, just below our methods, then create the title property.
+
+📄main.js
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/1969545f-eb15-40f8-9d85-92822ec9e299)
+
+
+If we check out the browser, we’ll still see “Vue Mastery Socks” displayed, except now we’ve abstracted that computational logic out of the template and contained it neatly on the options object.
+
+But how exactly are computed properties working? Let’s take a deeper look.
+
+### Think of them like a Calculator
