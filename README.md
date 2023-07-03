@@ -302,5 +302,45 @@ Sometimes you might want to add a bunch of styles to an element, but adding them
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/e5c13487-68fe-4a68-8ecd-384a77171920)
 
 ### Class Binding
+Let's disable the Add to Cart button when inStock is false AND make the button appear disabled, using class binding.
+To get this started, we’ll use the shorthand for v-bind on the disabled attribute to add that attribute whenever our product is not in stock.
+
+📄index.html
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/1aa4315b-ba15-4ab6-a31e-68ff5cd35958)
+
+Now, whenever inStock is false and we click the Add to Cart button, nothing will happen since it’s disabled. But the button still appears active, which is misleading to our users. So let’s use class binding to add a disabledButton class as well, whenever inStock is false.
+
+You’ll see in our CSS file that we already have this disabledButton class, which sets the background-color to gray and makes the cursor not-allowed.
 
 
+📄styles.css
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/cdbf7df6-e28b-4265-9f76-fd6dd231ba67)
+
+To apply this class conditionally, based on the value of inStock, we’ll use the shorthand for v-bind on the class attribute, and use an expression that adds the disabledButton class (or not) whenever !inStock.
+
+📄index.html
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/7e4b5ccb-b41b-4ce7-8136-bb43c2b47044)
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/93ddb07e-db53-453b-a9a1-33cf633095b3)
+
+### Multiple Class Names
+When getting started with class binding, there are some things to note. For example, what happens when we already have an existing class and we want to conditionally add another class based on a data value?
+
+For example, if we already have the color-circle class on this div, and we conditionally add the active class, how will this look?
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/27f71ef3-d2ea-421e-9733-7ad9b1775b12)
+
+
+Those classes are going to be combined like so:
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/c1233bd3-a83f-4326-97c6-ebd988d7f26f)
+
+
+### Ternary Operators
+
+A helpful tool that class binding gives us is the ability to use in-line ternary operators to add different classes based upon a condition.
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/433d9288-93a6-46b4-bd1a-98cad96cefc7)
