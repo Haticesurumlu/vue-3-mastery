@@ -13,49 +13,6 @@
       <div class="nav-bar"></div>
 
       <div class="cart">Cart({{ cart }})</div>
-
-      <div class="product-display">
-        <div class="product-container">
-          <div class="product-image">
-            <!-- BU KISMI CGPT YE SOR NEDEN HATA VERDİ ? <img :class="{ out-of-stock-img: !inStock}" v-bind:src="image" /> -->
-            <!-- BU DOGRUSU <img :class="{ 'out-of-stock-img': !inStock }" v-bind:src="image" /> -->
-            <img v-bind:src="image" />
-          </div>
-          <div class="product-info">
-            <h1>{{ title }}</h1>
-            <p v-if="inStock">In Stock</p>
-            <p v-else>Out of Stock</p>
-            <ul>
-              <li v-for="detail in details">{{ detail }}</li>
-            </ul>
-
-            <!-- <div
-              v-for="(variant,index) in variants"
-              :key="variant.id"
-              @mouseover="updateVariant(index)"
-              class="color-circle"
-              :style="{ backgroundColor: variant.color }"
-            >
-          </div> -->
-
-            <div
-              v-for="(variant, index) in variants"
-              :key="variant.id"
-              @mouseover="updateVariant(index)"
-              class="color-circle"
-              :style="{ backgroundColor: variant.color }"
-            ></div>
-            <button
-              class="button"
-              :class="{ disabledButton: !inStock }"
-              :disabled="!inStock"
-              @click="addToCart"
-            >
-              Add to Cart
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- Import App -->
