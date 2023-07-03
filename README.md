@@ -428,3 +428,14 @@ We’re now ready to delete image and inStock from our data, and replace those w
 So how do we grab the variant image and quantity? That will look like this:
 
 📄main.js
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/e923ded6-8ef9-4710-a410-5d8cfc2ef16d)
+
+We’re targeting the first or second element of our variants array based off the selectedVariant, which is either 0 or 1, depending on which variant color circle is hovered on. Then we just use dot notation to grab the image off that variant.
+
+The logic for computing inStock is nearly identical:
+
+📄main.js
+
+![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/d236b260-da01-4c07-9d7f-f26a6ed8eeb5)
+
