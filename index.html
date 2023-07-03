@@ -29,22 +29,22 @@
               <li v-for="detail in details">{{ detail }}</li>
             </ul>
 
-            <div
+            <!-- <div
               v-for="(variant,index) in variants"
               :key="variant.id"
               @mouseover="updateVariant(index)"
               class="color-circle"
               :style="{ backgroundColor: variant.color }"
-            ></div>
-            <!-- 
-            <div 
-            v-for="(variant, index) in variants" 
-            :key="variant.id" 
-            @mouseover="updateVariant(index)" 
-            class="color-circle" 
-            :style="{ backgroundColor: variant.color }">
+            >
           </div> -->
 
+            <div
+              v-for="(variant, index) in variants"
+              :key="variant.id"
+              @mouseover="updateVariant(index)"
+              class="color-circle"
+              :style="{ backgroundColor: variant.color }"
+            ></div>
             <button
               class="button"
               :class="{ disabledButton: !inStock }"
