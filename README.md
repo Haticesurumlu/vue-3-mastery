@@ -439,3 +439,7 @@ The logic for computing inStock is nearly identical:
 
 ![image](https://github.com/Haticesurumlu/vue-3-mastery/assets/71832100/d236b260-da01-4c07-9d7f-f26a6ed8eeb5)
 
+
+Checking this out in the browser, when we hover over the color circles, not only are we updating the variant image, but we’re also displaying whether that variant is in stock or out of stock, using its quantity.
+
+
