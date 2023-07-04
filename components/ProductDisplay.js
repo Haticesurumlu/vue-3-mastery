@@ -1,4 +1,10 @@
 app.component("product-display", {
+  props: {
+    premium: {
+      type: Boolean,
+      required: true,
+    },
+  },
   template:
     /*html*/
     `<div class="product-display">
@@ -11,6 +17,7 @@ app.component("product-display", {
     
             <p v-if="inStock">In Stock</p>
             <p v-else>Out of Stock</p>
+            <p>Shipping : {{shipping}} </p>
     
             <div 
               v-for="(variant, index) in variants" 
@@ -69,6 +76,13 @@ app.component("product-display", {
     },
     inStock() {
       return this.variants[this.selectedVariant].quantity;
+    },
+    shipping() {
+      //bu kısım hata veriyor. premium olmasına ragmen 2.99 gosteriyor
+      if (this.premium) {
+        return "Free";
+      }
+      return 2.99;
     },
   },
 });
